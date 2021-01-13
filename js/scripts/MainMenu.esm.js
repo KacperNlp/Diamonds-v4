@@ -14,7 +14,6 @@ class MainMenu extends BindToHtml{
     constructor(){
         super(MAIN_MENU_LAYER_ID);
         this.#initMenu();
-        console.log('działa')
     }
 
     #initMenu(){
