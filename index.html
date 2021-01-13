@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamonds</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@600&family=Hanalei+Fill&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style/main.min.css">
+</head>
+
+<body>
+    <main class="main">
+
+        <!--background-->
+        <div class="background" id="js-background">
+        </div>
+
+        <a href="https://github.com/KacperNlp" class="github-link" target="_blank"><span
+                class="fab fa-github"></span></a>
+
+        <!--Main menu-->
+        <section class="layer menu" id="js-main-menu">
+            <div class="menu__buttons-container">
+                <button class="button" id="js-start-button">Start Game</button>
+                <button class="button" id="js-settings-button">Settings</button>
+            </div>
+        </section>
+
+        <!--Levels layer-->
+        <section class="layer levels hidden" id="js-levels-layer">
+            <div class="levels__container" id="js-levels-container">
+            </div>
+
+            <!--return button-->
+            <button class="button button--return" id="js-levels-layer-return-button"><span class="fas fa-reply"></span>
+                Return</button>
+
+            <!--Settings button-->
+            <button class="button button--in-other-layers" id="js-levels-layer-settings-button">Settings</button>
+        </section>
+
+        <!--game map/board-->
+        <section class="layer gam-map hidden" id="js-game-map">
+            <div class="game-map__stats-container">
+                <p class="game-map__stat">Highest score: <span id="js-hight-score"
+                        class="game-map__stat-numbers"></span>
+                </p>
+                <p class="game-map__stat">Required score: <span id="js-required-score"
+                        class="game-map__stat-numbers"></span></p>
+                <p class="game-map__stat">Current score: <span id="js-current-score"
+                        class="game-map__stat-numbers"></span></p>
+                <p class="game-map__stat">Movements: <span id="js-movement" class="game-map__stat-numbers"></span></p>
+            </div>
+            <canvas class="canvas" id="js-canvas"></canvas>
+
+            <!--return button-->
+            <button class="button button--return" id="js-game-layer-return-button"><span class="fas fa-reply"></span>
+                Return</button>
+
+            <!--settings button-->
+            <button class="button button--in-other-layers" id="js-game-layer-settings-button">Settings</button>
+        </section>
+
+        <!--loader-->
+        <section class="loader hidden" id="js-loader">
+            <p class="loader__txt">Loaded <span id="js-loaded-elements">0</span> of <span
+                    id="js-elements-to-load">0</span>...
+            </p>
+        </section>
+
+        <!--message for game result-->
+        <div class="layer hidden" id="js-message-layer">
+            <div class="message" id="js-message">
+
+                <!--message content-->
+                <h1 class="message__result" id="js-header-txt">You won!</h1>
+                <p class="message__txt">
+                    <span class="message__new-record" id="js-new-record"></span>
+                <p class="message__score-txt">Your score: <span id="js-message-score">1203</span>
+                </p>
+                </p>
+
+                <!--close button-->
+                <button class="button message__button" id="js-colse-message">Exit</button>
+            </div>
+        </div>
+
+
+        <!--settings-->
+        <div class="layer settings hidden" id="js-settings-layer">
+            <div class="settings__container" id="js-settings-container">
+
+                <h2 class="settings__header">Settings</h2>
+
+                <!--game sounds volume-->
+                <div class="settings__box">
+                    <span class="fas fa-volume-up settings__icon"></span>
+                    <input class="bar" type="range" id="js-game-sound-bar" value="30" max="100" min="0">
+                </div>
+
+                <!--music volume-->
+                <div class="settings__box">
+                    <span class="fas fa-music settings__icon"></span>
+                    <input class="bar" type="range" id="js-music-bar" value="30" max="100" min="0">
+                </div>
+
+                <!--Exit button-->
+                <button class="button settings__button" id="js-colse-settings">Exit</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="/js/scripts/MainMenu.esm.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.levels {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: $background;
+    opacity: 0.9;
+    border: 2px solid $borderColor;
+  }
+
+  &__button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid $fontColor;
+    background: $buttonBg;
+    transition: 0.5s;
+    outline: none;
+    color: $fontColor;
+    font-size: $levelButtonFontSize;
+
+    &.locked {
+      background: $lockedButtonBg;
+    }
+
+    &.unlocked:hover {
+      cursor: pointer;
+      border-color: $buttonBg;
+      color: $buttonBg;
+      background: $fontColor;
+    }
+
+    & span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: $levelButtonIconSize;
+      opacity: 0.2;
+    }
+  }
+}

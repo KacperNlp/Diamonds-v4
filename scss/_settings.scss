@@ -1,0 +1,121 @@
+.settings {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: $background;
+    border: 3px solid $borderColor;
+    box-shadow: 0 0 10px $shadow;
+  }
+
+  &__header {
+    position: absolute;
+    top: 30px;
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+
+  &__box {
+    width: 80%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+  cursor: pointer;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  outline: none;
+
+  //chrome
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $borderColor;
+    background: rgba(100, 99, 99, 0.95);
+    transform: translateY(-6px);
+    transition: 0.3s;
+    &:hover {
+      background: crimson;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    background: rgba(51, 51, 51, 0.95);
+    height: 12px;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid $borderColor;
+    border-radius: 10px;
+  }
+
+  //moz
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $borderColor;
+    background: rgba(100, 99, 99, 0.95);
+    transition: 0.3s;
+    &:hover {
+      background: crimson;
+    }
+  }
+
+  &::-moz-range-track {
+    background: rgba(51, 51, 51, 0.95);
+    height: 12px;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid $borderColor;
+    border-radius: 10px;
+  }
+  &::-moz-range-progress {
+    height: 12px;
+    border-radius: 10px;
+    background: rgb(255, 72, 0);
+    background: linear-gradient(
+      243deg,
+      rgba(255, 72, 0, 1) 0%,
+      rgba(237, 208, 12, 1) 100%
+    );
+  }
+}

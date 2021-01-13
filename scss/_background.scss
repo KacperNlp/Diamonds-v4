@@ -1,0 +1,17 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  animation: bgAnimation 5s infinite alternate;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: rgb(78, 0, 0);
+  }
+}

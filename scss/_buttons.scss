@@ -1,0 +1,30 @@
+.button {
+  width: $buttonsWidth;
+  height: $buttonHeight;
+  font-family: $specialFont;
+  font-size: $buttonFontSize;
+  background: $buttonBg;
+  border: 2px solid $fontColor;
+  color: $fontColor;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: $buttonBg;
+    border-color: $buttonBg;
+    background: $fontColor;
+  }
+
+  &--in-other-layers {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+  }
+
+  &--return {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+  }
+}

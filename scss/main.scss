@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import "variables";
+
+html {
+  font-family: $specialFont;
+  color: $fontColor;
+  font-size: $fontSize;
+  background: $background;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@import "layer";
+@import "buttons";
+@import "menu";
+@import "background";
+@import "levels-layer";
+@import "game";
+@import "message";
+@import "settings";
+@import "loader";
+
+.github-link {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 5rem;
+  color: $fontColor;
+  cursor: pointer;
+  z-index: 15;
+  transition: 0.3s;
+
+  &:hover {
+    color: gold;
+    transform: scale(1.1);
+  }
+}
+
+.hidden {
+  display: none;
+}
