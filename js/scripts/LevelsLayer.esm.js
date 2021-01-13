@@ -5,8 +5,6 @@ import {HIDDEN_LAYER, visibilityOfLayer, VISIBLE_LAYER} from './VisibilityOfLaye
 import {game} from './Game.esm.js';
 import { mainMenu } from './MainMenu.esm.js';
 import { storage } from './Storage.esm.js';
-import { loader } from './Loader.esm.js';
-import { DIAMOND_SPRITE_FILE_SRC } from './DiamondSprite.esm.js';
 import { settings, SETTINGS_CONTAINER_ID, SETTINGS_LAYER_ID } from './Settings.esm.js';
 import { animations } from './Animations.esm.js';
 
@@ -91,7 +89,6 @@ class LevelsLayer extends BindToHtml{
 
     #buttonHandle(button, level){
         button.addEventListener('click', ()=>{
-            loader.loadSprite(DIAMOND_SPRITE_FILE_SRC)
             visibilityOfLayer.changeVisibilityOfLayer(this.layer, HIDDEN_LAYER);
             visibilityOfLayer.changeVisibilityOfLayer(game.layer, VISIBLE_LAYER);
             game.startNewGame(level);
