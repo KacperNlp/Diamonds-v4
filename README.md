@@ -12,10 +12,10 @@ kinds of diamonds:
 ## About project
 Game has 3 main layers (Main menu, board with levels and game map) and 2 side layers (settings and message after game with result).
 * Levels layer - board with levels is generates every time when player will come in
-* Game layer - each level doesn't have an assigned board/map with diamonds, this board is generates automatically when player opens the level.<br/>
+* Game layer - each level doesn't have an assigned board/map with diamonds, this board is generates automatically when player opens the level.<br/><br/>
 kinds of diamonds in levels:
-1,2 and 3 - 5 kinds (yellow, red, purple, white and green)
-4 and 5 - 6 kinds (one more 'blue')
+* 1,2 and 3 - 5 kinds (yellow, red, purple, white and green)
+* 4 and 5 - 6 kinds (one more 'blue')
 
 ## Media Queries
 This project was created for desktop only. 
