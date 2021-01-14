@@ -12,7 +12,7 @@ kinds of diamonds:
 ## About project
 Game has 3 main layers (Main menu, board with levels and game map) and 2 side layers (settings and message after game with result).
 * Levels layer - board with levels is generates every time when player will come in
-* Game layer - each level doesn't have an assigned board/map with diamonds, this board is generates automatically when player opens the level.
+* Game layer - each level doesn't have an assigned board/map with diamonds, this board is generates automatically when player opens the level.<br/>
 kinds of diamonds in levels:
 1,2 and 3 - 5 kinds (yellow, red, purple, white and green)
 4 and 5 - 6 kinds (one more 'blue')
@@ -29,6 +29,6 @@ I made this game for OPP learning as a task from course on Udemy
 * Game sound(Diamonds sound): https://mixkit.co/free-sound-effects/
 
 ## Technologies
-I used JavaScript, HTML and Sass in this project.
+I used JavaScript, HTML and Sass in this project.<br/>
 
 status of project: finished 
