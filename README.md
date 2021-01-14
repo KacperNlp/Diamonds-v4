@@ -1,6 +1,13 @@
 # Diamonds
 This is a simple game with 5 levels, where player has to pass required score of current level to unlock next level. Also each level has highest score and I use local storage to set and save it for each level.<br/>
-To increse score, player has to match diamonds with the same kind (kinds of diamonds: yellow, red, purple, white, green and blue (but 'blue' is only in 4 and 5 levels))
+To increse score, player has to match diamonds with the same kind. </br>
+kinds of diamonds: 
+* yellow, 
+* red, 
+* purple, 
+* white, 
+* green,
+* blue (but only in 4 and 5 levels)
 
 ## About project
 Game has 3 main layers (Main menu, board with levels and game map) and 2 side layers (settings and message after game with result).
