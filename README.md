@@ -7,7 +7,7 @@ kinds of diamonds:
 * purple, 
 * white, 
 * green,
-* blue (but only in 4 and 5 levels)
+* blue (but only in 4 and 5 level)
 
 ## About project
 Game has 3 main layers (Main menu, board with levels and game map) and 2 side layers (settings and message after game with result).
