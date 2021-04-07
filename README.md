@@ -31,4 +31,6 @@ I made this game for OPP learning as a task from course on Udemy
 ## Technologies
 I used JavaScript, HTML and Sass in this project.<br/>
 
+LIVE: https://naughty-shockley-1703d3.netlify.app/
+
 status of project: finished 
